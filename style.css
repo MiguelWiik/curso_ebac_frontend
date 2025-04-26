@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: #2f3640; /* ">" Edita o filho direto de body*/
+    padding: 16px 0;
+    color: #f6f4fa;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f6f4fa;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articles article img{
+    width: 100%;
+    max-height: 273px;
+    height: 100%;
+}
+
+.articles article {
+    width: 30%;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    font-size: 36px;
+}
+
+.articles article h3 {
+    margin: 8px 0;
+    font-size: 24px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.articles article p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.2)
+}
+
+#sports .articles article a {
+    background-color: green;
+}
+
+#economy {
+    background-color: rgb(248, 236, 166)
+}
+
+#economy .articles article a {
+    background-color: rgb(204, 137, 12);
+}
+
+#tecnology {
+    background-color: rgb(218, 250, 250)
+}
+
+section#tecnology {
+    padding-bottom: 70px; /* Gambiarra pra encaixar o botão em section#tecnology (Position não deu certo)*/
+}
+
+#entertainment {
+    background-color: rgba(182, 134, 134, 0.4);
+}
+
+#entertainment .articles article a {
+    background-color: rgb(189, 62, 62);
+}

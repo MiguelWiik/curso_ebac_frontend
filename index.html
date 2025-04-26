@@ -1,28 +1,204 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade HTML</title>
+    <title>Meu portal de notícias</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Formulário de Cadastro</h1>
+        <div class="container">
+            <h1>Meu portal de notícias</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
+                    </li>
+                    <li>
+                        <a href="#economy" title="Ir para a seção de notícias">Economia</a>
+                    </li>
+                    <li>
+                        <a href="#tecnology" title="Ir para a seção de tecnologia">Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="#entertainment" title="Ir para a seção de entretenimento">Entretenimento</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <form action="">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome">
-            <br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha">
-            <br>
-            <button type="submit">Cadastrar</button>
-        </form>
-    </main>
-    
+    <section id="sports">
+        <div class="container">
+            <h2>Esportes</h2>
+            <div class="articles">
+                <article>
+                    <img src="./imagens/futebol.jpg" alt="Bola de futebol no gramado" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Grande clássico na noite de hoje</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/futebol-americano.jpg" alt="Jogador de futebol americano correndo com a bola na mão" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Noite do Superbowl</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Notícia sobre a NBA</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Notícia sobre a NBA</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="economy">
+        <div class="container">
+            <h2>Economia</h2>
+            <div class="articles">
+                <article>
+                    <img src="./imagens/dolares.jpg" alt="Muitos dólares" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Dólar em alta de 0.50%</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/euro.jpg" alt="Várias notas de euro" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Euro em queda de 0.40%</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Alta no preço do barril do petróleo</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="tecnology">
+        <div class="container">
+            <h2>Tecnologia</h2>
+            <div class="articles">
+                <article>
+                    <img src="./imagens/celular.jpg" alt="Celular da xiaomi" />
+                    <header>
+                        <time>26/04/2025 às 15:02</time>
+                    </header>
+                    <h3>Realme 14: linha chega ao Brasil com celular que muda de cor a partir de R$ 2,8 mil</h3>
+                    <p>
+                        Os novos aparelhos da linha Realme 14 têm apelo gamer e vêm com bateria de 6000 mAh; confira especificações!
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/inteligencia-artificial.jpg" alt="Inteligência artificial do Opera GX" />
+                    <header>
+                        <time>26/04/2025 às 15:02</time>
+                    </header>
+                    <h3>Navegador Opera Mini ganha integração com a IA Aria</h3>
+                    <p>
+                        A Aria finalmente desembarcou no Opera Mini, a versão mais acessível do navegador da Opera para dispositivos móveis.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/nintendo-switch-2.jpg" alt="Nintendo Switch 2" />
+                    <header>
+                        <time>26/04/2025 às 15:02</time>
+                    </header>
+                    <h3>Nintendo Switch 2 ganha data de lançamento e preço mais alto que PS5 no Brasil</h3>
+                    <p>
+                        Switch 2 chega ao Brasil no lançamento global com valor mais alto que o PS5 e jogos custando até R$ 500
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="entertainment">
+        <div class="container">
+            <h2>Entretenimento</h2>
+            <div class="articles">
+                <article>
+                    <img src="imagens/Fernanda Torres.jpg" alt="Fernanda Torres em filme 'Ainda estou Aqui' " />
+                    <header>
+                        <time>26/04/2025 às 15:02</time>
+                    </header>
+                    <h3>Academia de Cinema volta atrás e 'Ainda estou aqui' vai disputar Grande Otelo</h3>
+                    <p>
+                        Filme havia sido retirado da competição para ser homenageado, mas decisão foi revertida a pedido dos produtores
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="imagens/minecraft-o-filme.jpg" alt="Cena de Minecraft o filme" />
+                    <header>
+                        <time>26/04/2025 às 15:02</time>
+                    </header>
+                    <h3>Um Filme Minecraft surpreende e quebra recorde histórico de Barbie e Super Mario Bros.</h3>
+                    <p>
+                        O live-action do videogame mais vendido de todos está em cartaz nos cinemas brasileiros.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/Jacquin.jpg" alt="Jacquin e os proprietários do Dona Emília" />
+                    <header>
+                        <time>26/04/2025 às 15:02</time>
+                    </header>
+                    <h3>"É um filme de terror": Ratos no forno provocam reação intensa de Jacquin no mais novo episódio de Pesadelo na Cozinha</h3>
+                    <p>
+                        O chef ficou horrorizado com o estado do restaurante e mandou fechar o local!
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

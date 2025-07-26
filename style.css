@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(250, 250, 192);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.green-span {
+    color: #1d7e10;
+}
+
+.container {
+    max-width: 720px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+input, button{
+    display: block;
+    padding: 8px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    background-color: #68e757;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #8bc963;
+}
+
+.sucess-message,
+.error-message {
+    padding: 8px;
+    display: none;
+}
+
+.error-message {
+    background-color: red;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+.sucess-message {
+    background-color: #1d7e10;
+    color: #68e757;
+    font-size: 18px;
+}
+
+.error {
+    display: block;
+}
+
+.sucess {
+    display: block;
+    color: #68e757;
+}

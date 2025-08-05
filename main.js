@@ -3,15 +3,19 @@ $(document).ready(function(){
         e.preventDefault();
 
         const inputTaskValue = $('#form-input').val().trim()
-        $(`<li>
-                <label class="task-clickable">
-                    <div class="finish-task-button"></div>
-                </label>
-                <div class="task-text">${inputTaskValue}</div>
-                <img src="images/bin.png" alt="recycle bin illustration" id="recycle-bin">
-            </li>
-            `).appendTo('ul')
-        $('#form-input').val('')
+        if (inputTaskValue != ''){
+            $(`<li>
+                    <label class="task-clickable">
+                        <div class="finish-task-button"></div>
+                    </label>
+                    <div class="task-text">${inputTaskValue}</div>
+                    <img src="images/bin.png" alt="recycle bin illustration" id="recycle-bin">
+                </li>
+                `).appendTo('ul')
+                $('#form-input').val('')
+            } else {
+                ''
+            }
     });
     $(document).on('click', '.task-clickable', function(){
         $(this).closest('li').toggleClass('line-through');

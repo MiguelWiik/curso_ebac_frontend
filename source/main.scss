@@ -1,0 +1,23 @@
+@use 'config/reset.scss';
+@use 'imports/variables.scss';
+@use 'layout/header.scss';
+@use 'layout/sectproducts.scss';
+@use 'layout/breakpoints.scss';
+
+body {
+    background-color: variables.$bodyColor;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 56px 0;
+}

@@ -1,7 +1,7 @@
 {
   "name": "exercicio",
   "version": "1.0.0",
-  "description": "",
+  "description": "exercício de GIT do curso de front end da EBAC",
   "main": "index.js",
   "scripts": {
     "sass": "sass source/main.scss build/main.css --watch",
@@ -12,5 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.93.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelWiik/curso_ebac_frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MiguelWiik/curso_ebac_frontend/issues"
+  },
+  "homepage": "https://github.com/MiguelWiik/curso_ebac_frontend#readme"
 }

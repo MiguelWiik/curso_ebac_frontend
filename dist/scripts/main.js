@@ -1,0 +1,1 @@
+let numero=10;for(let o=0;o<numero;o++)console.log(o);

@@ -1,12 +1,19 @@
+@import 'maps.less';
+
+@fonteprincipal: Roboto, sans-serif;
+
+@breakpointTablet: ~"(max-width: 1023px)";
+@breakpointMobile: ~"(max-width: 767px)";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: @fonteprincipal;
 }
 
 body {
-    background-color: #f5f6fa;
+    background-color: #colors[backgroundColor];
 }
 
 li {
@@ -20,31 +27,31 @@ li {
 }
 
 header {
-    background-color: #182C61;
+    background-color: #colors[headerColor];
     position: sticky;
     top: 0;
     left: 0;
-}
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
 }
 
 .menu {
     display: flex;
-}
 
-.menu li {
-    font-weight: bold;
-    margin-left: 24px;
-}
+    li {
+        font-weight: bold;
+        margin-left: 24px;
 
-.menu li a {
-    color: #fff;
-    text-decoration: none;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 }
 
 section {
@@ -67,7 +74,7 @@ section {
 
 .product-button {
     display: block;
-    background-color: #44bd32;
+    background-color: #colors[productButton];
     color: #fff;
     text-align: center;
     padding: 8px 0;
@@ -77,10 +84,10 @@ section {
 }
 
 .product-button:hover {
-    background-color: #4cd137;
+    background-color: #colors[productButtonHover];
 }
 
-@media screen and (max-width: 1023px) {
+@media @breakpointTablet {
     .container {
         max-width: 80%;
     }
@@ -91,7 +98,7 @@ section {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media @breakpointMobile {
     .products {
         display: block;
     }
